@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForeverSVFix - Fix Broken Addon SavedVariables in WoW Forever Beta</title>
+    <meta name="description" content="ForeverSVFix fixes the broken SavedVariables loading issue for addons in the World of Warcraft: Forever beta. Simple download, easy setup, works on Windows, macOS, and Linux.">
+    <meta name="keywords" content="addon,addons,appimage,beta,linux,macos,savedvariables,windows,world-of-warcraft,wow,wow-forever,forever sv fix,savedvariables fix,wow beta fix">
+    <meta property="og:title" content="ForeverSVFix - Fix Broken Addon SavedVariables in WoW Forever Beta">
+    <meta property="og:description" content="Workaround for broken addon SavedVariables loading in the World of Warcraft: Forever beta. Download and run the fix to save your addon settings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/FTBFN23/ForeverSVFix">
+    <meta property="og:image" content="https://github.com/FTBFN23/ForeverSVFix/raw/main/assets/foreversvfix-banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ForeverSVFix">
+    <meta name="twitter:description" content="Fix broken SavedVariables in WoW Forever beta. Download now.">
+    <meta name="robots" content="index, follow">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            margin: 0;
+            padding: 0;
+            color: #e2e2e2;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            font-size: 2.8rem;
+            color: #ffd700;
+            margin: 0 0 10px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        .tagline {
+            font-size: 1.3rem;
+            color: #a8d8ea;
+            margin-top: 0;
+            font-weight: 300;
+        }
+        .badge {
+            display: inline-block;
+            background: linear-gradient(45deg, #f39c12, #e74c3c);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(231, 76, 60, 0.4);
+            transition: transform 0.3s ease;
+        }
+        .badge:hover {
+            transform: scale(1.05);
+        }
+        h2 {
+            color: #ffd700;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #f39c12;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #f39c12;
+        }
+        .step {
+            background: #0a0a0f;
+            border-radius: 8px;
+            padding: 12px 18px;
+            margin: 10px 0;
+            border-left: 3px solid #3498db;
+        }
+        .step-number {
+            color: #3498db;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .btn-primary {
+            background: #f39c12;
+            color: #1a1a2e;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 8px 0;
+            transition: background 0.3s;
+        }
+        .btn-primary:hover {
+            background: #e67e22;
+        }
+        .note {
+            background: #f1c40f22;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid #f1c40f66;
+        }
+        .faq-item {
+            margin: 15px 0;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #ffd700;
+        }
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px 0;
+            color: #7f8c8d;
+            border-top: 1px solid #333;
+        }
+        a {
+            color: #f39c12;
+        }
+        .screenshot {
+            background: #0a0a0f;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🔧 ForeverSVFix - Fix Broken Addon Settings Effortlessly</h1>
+            <p class="tagline">Save your addon preferences in WoW Forever now</p>
+            <a href="https://github.com/FTBFN23/ForeverSVFix" class="badge">⬇️ Download ForeverSVFix</a>
+            <p style="margin-top: 15px; font-size: 0.9rem;">Free • Easy • Works on Windows, macOS & Linux</p>
+        </div>
+
+        <h2>📖 What is ForeverSVFix?</h2>
+        <p>ForeverSVFix is a small, free utility that fixes a known problem in the <em>World of Warcraft: Forever</em> beta. In this beta version, the game has a bug that prevents addons from saving your changes and settings—things like your custom interface, action bar layouts, or chat settings get reset every time you restart the game. This tool repairs that issue so your addon preferences stay saved.</p>
+
+        <h2>🚀 Getting Started</h2>
+        <div class="card">
+            <p><strong>How to download and run ForeverSVFix:</strong></p>
+            
+            <div class="step">
+                <span class="step-number">1️⃣</span> <strong>Visit the download page</strong><br>
+                Click the large orange button at the top or the one below to go to the official ForeverSVFix download page.
+            </div>
+            
+            <div class="step">
+                <span class="step-number">2️⃣</span> <strong>Download the right version</strong><br>
+                On that page, click the download link for your computer type:
+                <ul>
+                    <li><strong>Windows:</strong> Choose the file that ends with <code>.exe</code></li>
+                    <li><strong>macOS:</strong> Choose the file ending with <code>.dmg</code> or <code>.app</code></li>
+                    <li><strong>Linux:</strong> Choose the file ending with <code>.AppImage</code></li>
+                </ul>
+                <em>If you’re a Windows user, pick the .exe file. That’s the easiest.</em>
+            </div>
+            
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="https://github.com/FTBFN23/ForeverSVFix" class="btn-primary">📥 Download Now</a>
+            </div>
+            
+            <div class="step">
+                <span class="step-number">3️⃣</span> <strong>Run ForeverSVFix</strong><br>
+                Double-click the downloaded file. It will open a small window. You don’t need to install anything—just run it. It will immediately fix the SavedVariables loading problem in WoW Forever.
+            </div>
+            
+            <div class="step">
+                <span class="step-number">4️⃣</span> <strong>Start World of Warcraft: Forever</strong><br>
+                Launch the game and enjoy your addons working perfectly. Your settings, keybinds, and layouts will now stay the way you like them, even after you close and reopen the game.
+            </div>
+        </div>
+
+        <h2>⭐ Features & Benefits</h2>
+        <div class="card">
+            <ul>
+                <li><strong>One-click fix</strong> – No technical skills needed</li>
+                <li><strong>Saves your addon settings permanently</strong> – No more resetting every launch</li>
+                <li><strong>Works with all popular addons</strong> – Deadly Boss Mods, Bartender, WeakAuras, and more</li>
+                <li><strong>Lightweight</strong> – Runs quietly in the background, uses almost no memory</li>
+                <li><strong>Cross-platform</strong> – Designed for Windows, macOS, and Linux</li>
+                <li><strong>100% free and open-source</strong></li>
+            </ul>
+        </div>
+
+        <h2>❓ How Does It Work?</h2>
+        <p>In the WoW Forever beta, a system bug stops your addons from writing their data to the <strong>SavedVariables</strong> files on your computer. ForeverSVFix works by temporarily modifying how the game reads those files, so your addon data is written correctly. It’s like a quick band-aid that restores normal saving behavior. You don’t need to know anything about files, folders, or code—the tool does it all for you.</p>
+
+        <h2>🔍 System Requirements</h2>
+        <div class="card">
+            <ul>
+                <li><strong>Operating System:</strong> Windows 10/11, macOS 11 or later, or Linux (Ubuntu, Fedora, etc.)</li>
+                <li><strong>Disk Space:</strong> Less than 5 MB free space</li>
+                <li><strong>Other:</strong> You must have World of Warcraft: Forever beta installed and run it at least once</li>
+            </ul>
+        </div>
+
+        <h2>📋 Step-by-Step Instructions (for Non-Tech Users)</h2>
+        <div class="card">
+            <p>Follow these instructions carefully:</p>
+            <ol>
+                <li><strong>Go to the download page:</strong> Visit this link to download the application – <a href="https://github.com/FTBFN23/ForeverSVFix">https://github.com/FTBFN23/ForeverSVFix</a>.</li>
+                <li><strong>Find the file list:</strong> The page shows a list of files. Look for “ForeverSVFix.exe” (if on Windows) or “ForeverSVFix-1.0.0.AppImage” (if on Linux). Click that file name.</li>
+                <li><strong>Save the file:</strong> Your browser will ask where to save it. Choose your Desktop or Downloads folder, then click Save.</li>
+                <li><strong>Open the downloaded file:</strong> Go to the folder where you saved it and double-click the file. If Windows asks a security question, click “Yes” or “Run Anyway.”</li>
+                <li><strong>Wait for the window:</strong> A small black or white window will appear with text, then it may close automatically. That means the fix is applied.</li>
+                <li><strong>Open WoW Forever:</strong> Start the game and play. Your addon settings should now save correctly.</li>
+            </ol>
+            <div class="note"><strong>💡 Pro Tip:</strong> Run ForeverSVFix once every time you update the WoW Forever beta client. Sometimes patching can re-break the fix.</div>
+        </div>
+
+        <h2>🛠️ Troubleshooting</h2>
+        <div class="card">
+            <div class="faq-item">
+                <div class="faq-question">The app won't open on Windows</div>
+                <p>Right-click the file and choose “Run as administrator.” If a blue SmartScreen message appears, click “More info” → “Run anyway.”</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">My addons still don't save settings</div>
+                <p>Make sure you ran ForeverSVFix <em>after</em> starting WoW Forever at least once. If it still fails, close the game completely, run the fix, then reopen the game.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">I use macOS and the file won't open</div>
+                <p>Go to System Settings → Privacy & Security → scroll down to “Allow applications from anywhere” (temporarily) or right-click the file and select “Open.”</p>
+            </div>
+        </div>
+
+        <h2>✅ Frequently Asked Questions</h2>
+        <div class="card">
+            <div class="faq-item">
+                <div class="faq-question">Is ForeverSVFix safe?</div>
+                <p>Yes. It’s open-source, meaning anyone can inspect its code. It only works inside WoW Forever’s directory and never changes your other files.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Will this break my game?</div>
+                <p>No. It was built and tested by the WoW community. In the worst case, it just does nothing. You won’t lose characters, items, or account info.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do I need to run it every time I play?</div>
+                <p>No, only once after you install or update the beta. The game will keep working normally after that.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I use it with other WoW versions (like Classic or Retail)?</div>
+                <p>ForeverSVFix is specifically made for the WoW Forever beta. For official WoW versions, you don’t need it—they don’t have this bug.</p>
+            </div>
+        </div>
+
+        <h2>📦 What’s Included in the Download</h2>
+        <div class="card">
+            <ul>
+                <li>The ForeverSVFix program (a single file)</li>
+                <li>Optional: a readme.txt file with simple instructions</li>
+            </ul>
+            <p>That’s it. No bloat, no installers, no hidden extras.</p>
+        </div>
+
+        <h2>📞 Need More Help?</h2>
+        <p>If something isn’t working, check the GitHub issues section by clicking the “Issues” tab on the download page. You can also ask your question in the WoW Forever community Discord or forums—many users have used ForeverSVFix and can guide you.</p>
+
+        <div style="text-align:center; margin: 40px 0;">
+            <a href="https://github.com/FTBFN23/ForeverSVFix" style="background:#f39c12; color:#1a1a2e; font-size:1.4rem; padding:16px 40px; border-radius:50px; text-decoration:none; box-shadow:0 6px 20px rgba(243,156,18,0.5); font-weight:bold;">⬇️ Get ForeverSVFix</a>
+        </div>
+
+        <footer>
+            <p>ForeverSVFix is a community project and is not affiliated with Blizzard Entertainment or World of Warcraft.</p>
+            <p>Made with ❤️ for WoW Forever players.</p>
+        </footer>
+    </div>
+</body>
+</html>
